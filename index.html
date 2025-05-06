@@ -1,0 +1,172 @@
+<!-- It is common to name the HTML homepage as index.html -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Contains information about webpage -->
+        <title>Hello world!</title>
+        <!--Favicon for webpage-->
+        <link rel="icon" type="image/jpg" href="assets/Anya.jpg">
+    </head>
+
+    <body>
+        <!-- Contains visible contents in webpage -->
+        <h1>This is an h1 heading</h1>
+        <h2>This is an h2 heading</h2>
+        <h3>This is an h3 heading</h3>
+        <h4>This is an h4 heading</h4>
+        <h5>This is an h5 heading</h5>
+        <hr> <!-- Horizontal rule -->
+        <br> <!-- Line break -->
+
+        <p>  <!-- Paragraph -->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi architecto amet sunt, atque provident quia error eligendi ipsum ducimus numquam accusantium, sint libero labore earum? Totam in suscipit sequi consequatur!
+        </p>
+        <!--A paragraph can also be created by pre tag, allowing 
+        new line as pre formated-->
+
+        <!-- Anchor, Open in a new tab and Hovered information-->
+        <a href="https://www.google.com/"
+        target="_blank" 
+        title="Goes to Google"> 
+            Click me
+        </a>
+        <br>
+
+        <!-- Relative URL -->
+        <a href="lyrics.html"
+        target="_blank"
+        title="Welcome to the Show">
+            Song Lyrics
+        </a>
+        <br>
+
+        <!-- Mail Structure -->
+        <a href="mailto:tranthienphuc123456789@gmail.com">
+            Email me!
+        </a>
+        <br><br>
+
+        <!-- Insert an image -->
+        <a href="https://cuutruyen.net/mangas/152/chapters/">
+            <img src="assets/Anya.jpg"
+            alt="This is a kawaii picture of Anya Forger"
+            height="200">
+        </a>
+
+        <!-- Insert audio -->
+        <p>SpyxFamily ED Lofi - Kigeki</p>
+        <audio controls autoplay muted loop>
+            <source src="assets/Kigeki_SpyxFamilyED_Lofi.mp3" type="audio/mpeg">
+            <!--Fallback-->
+            <source src="assets/Kigeki_SpyxFamilyED_Lofi.wav" type="audio/wav"> 
+        </audio>
+        <br>
+
+        <!-- Insert video -->
+        <video width="300" controls autoplay muted loop>
+            <source src="assets/「Creditless」SPY x FAMILY ED _ Ending 1「UHD 60FPS」.mp4" type="video/mp4">
+            <source src="assets/「Creditless」SPY x FAMILY ED _ Ending 1「UHD 60FPS」.webm" type="video/webm">
+        </video>
+        <br><br>
+
+        <p>This is a normal text</p>
+        <p>This is a <b>bold</b> text</p>
+        <p>This is a <i>italic</i> text</p>
+        <p>This is a <u>underlined</u> text</p>
+        <p>This is a <del>deleted</del> text</p>
+        <p>This is a <big>big</big> text</p>
+        <p>This is a <small>small</small> text</p>
+        <p>This is a <sub>subscript</sub> text</p>
+        <p>This is a <sup>superscipt</sup> text</p>
+        <p>This is a <tt>monospaced</tt> text</p>
+        <p>This is a <mark style="background-color: aqua;">highlighted</mark> text</p>
+        
+        <!-- GROUP TOGETHER HTML -->
+        <!-- <span> inline container to group elements for styling purposes -->
+        <!-- <div> block container to group elements for styling purposes -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span style="background-color: bisque;">Natus eaque magnam, voluptate non quis rerum autem velit omnis ab obcaecati voluptatibus maxime vitae corporis ipsa aliquid impedit fugiat ducimus unde?</span></p>  
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <div style="background-color: bisque;">Natus eaque magnam, voluptate non quis rerum autem velit omnis ab obcaecati voluptatibus maxime vitae corporis ipsa aliquid impedit fugiat ducimus unde?</div></p>
+        <br>
+
+        <!-- Unordered List -->
+        <h4>Four pillars of shounen</h4>
+        <ul>
+            <li>Dragon Ball</li>
+            <ul>
+                <li>Dragon Ball Z</li>
+                <li>Dragon Ball Super</li>
+                <li>Dragon Ball Daima</li>
+            </ul>
+            <li>One Piece</li>
+            <li>Bleach</li>
+            <li>Naruto</li>
+        </ul>
+
+        <!-- Ordered List -->
+        <h4>To do list</h4>
+        <ol>
+            <li>HTML and CSS</li>
+            <li>JavaScipt</li>
+            <li>React</li>
+            <li>ReactNative</li>
+        </ol>
+        
+        <!-- Description List -->
+        <h4>Mythical creatures</h4>
+        <dl style="background-color: lightgray; border: 1.5px solid">
+            <dt>Dragon</dt>
+            <dd>a mythical monster resembling a giant reptile, sometimes shown as having wings.</dd>
+            <dt>Phoenix</dt>
+            <dd>a unique bird that lived for five or six centuries in the Arabian desert, after this time burning itself on a funeral pyre and rising from the ashes with renewed youth to live through another cycle.</dd>
+            <dt>Vampire</dt>
+            <dd>a corpse supposed, in European folklore, to leave its grave at night to drink the blood of the living by biting their necks with long pointed canine teeth.</dd>
+            <dt>Werewolf</dt>
+            <dd>a person who changes for periods of time into a wolf, typically when there is a full moon.</dd>
+        </dl>
+
+        <!-- Table -->
+        <h4>My schedule</h4>
+        <table border="1" style="background-color: lightcyan;">
+            <tr>
+                <th>Sunday</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursay</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+            </tr>
+            <tr align="center" style="background-color: aliceblue;">
+                <td>Maths</td>
+                <td>Physics</td>
+                <td>Chemistry</td>
+                <td>Biology</td>
+                <td>History</td>
+                <td>Geography</td>
+                <td>Musics</td>
+            </tr>
+            <tr align="center" style="background-color: aliceblue;">
+                <td>Maths</td>
+                <td>Physics</td>
+                <td>Chemistry</td>
+                <td>Biology</td>
+                <td>History</td>
+                <td>Geography</td>
+                <td>Musics</td>
+            </tr>
+            <tr align="center" style="background-color: aliceblue;">
+                <td>Maths</td>
+                <td>Physics</td>
+                <td>Chemistry</td>
+                <td>Biology</td>
+                <td>History</td>
+                <td>Geography</td>
+                <td>Musics</td>
+            </tr>
+        </table>
+        <br>
+
+        <button style="font-size: 15px;">Click me</button>
+    </body>
+</html>
