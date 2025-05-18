@@ -11,6 +11,17 @@
 
     <body>
         <!-- Contains visible contents in webpage -->
+
+        <header style="background-color: lemonchiffon;">
+            <h1>Welcome to my first website hẹ hẹ hẹ</h1>
+            <a href="">Home</a>
+            <a href="">About Me</a>
+            <a href="">Projects</a>
+            <a href="">Contact Me</a>
+            <hr>
+        </header>
+
+        <main>
         <h1>This is an h1 heading</h1>
         <h2>This is an h2 heading</h2>
         <h3>This is an h3 heading</h3>
@@ -167,6 +178,81 @@
         </table>
         <br>
 
-        <button style="font-size: 15px;">Click me</button>
+        <button onclick="doSomething()" style="font-size: 15px; border-radius: 5px;">Click me</button>
+        <p id="language">HTML</p>
+        <!-- JavaScript code -->
+        <script>
+            function doSomething() {
+                document.getElementById("language").innerHTML = "CSS";
+            }
+        </script>
+
+        <!-- action is the place storing data from the form -->
+        <!-- method is the -->
+        <form action="index.php" method="post" enctype="multipart/form-data">
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Anya Forger" minlength="6" maxlength="15" required>
+            <br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="anyaforger@gmail.com" required>
+            <br>
+
+            <label for="phone">Phone number:</label>
+            <input type="tel" id="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            <br>
+
+            <label for="birth">Birthday:</label>
+            <input type="date" id="birth" required>
+            <br>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" min="0" max="99" value="1" required>
+            <br>
+
+            <label for="title">Title:</label>
+            <label for="mr">Mr.</label>
+            <input type="radio" id="mr" required, name="title">
+            <label for="ms">Ms.</label>
+            <input type="radio" id="ms" required, name="title">
+            <label for="phd">PhD.</label>
+            <input type="radio" id="phd" required, name="title">
+            <br>
+
+            <label for="payment">Payment:</label>
+            <select id="payment">
+                <option>Visa</option>
+                <option>Mastercard</option>
+                <option>Giftcard</option>
+            </select>
+            <br>
+
+            <label for="subscribe">Subscribe:</label>
+            <input type="checkbox", id="subscribe">
+            <br>
+
+            <label for="file">File:</label>
+            <input type="file" id="file" accept="image/png, image/jpeg">
+            <br>
+
+            <label for="comment">Your opinion:</label><br>
+            <textarea id="comment" rows="3" cols="25"></textarea>
+            <br><br>
+
+            <input type="reset"><br>
+            <input type="submit">
+        </form>
+        </main>
+
+        <footer style="background-color: lemonchiffon;">
+            <hr>
+            Author: abc <br>
+            &copy; Copyright reserved <br>
+            <small><a href="mailto:anyaforger@gmail.com">anyaforger@gmail.com</a></small>
+        </footer>
     </body>
 </html>
